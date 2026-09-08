@@ -1,0 +1,4 @@
+# install.sh is fetched raw and run by `sh` on a Linux host. If CRLF reaches
+# the committed blob the heredoc terminators stop matching and the install
+# fails outright, so pin LF regardless of the checkout platform.
+*.sh text eol=lf
