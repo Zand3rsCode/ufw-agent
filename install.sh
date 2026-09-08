@@ -1123,7 +1123,7 @@ write_unit() {
   cat > "$UNIT" <<EOF
 [Unit]
 Description=ufw-reloaded agent (dedicated sshd on port $PORT)
-Documentation=https://github.com/gencaps/UFW-Reloaded
+Documentation=https://github.com/Zand3rsCode/ufw-agent
 After=network.target auditd.service
 # Deliberately independent of ssh.service: this must never be able to affect
 # the system sshd, and stopping it must never affect port 22.
